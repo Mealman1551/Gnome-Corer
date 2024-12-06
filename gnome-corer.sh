@@ -5,7 +5,7 @@ if [ "$(id -u)" -ne 0 ]; then
     exit 1
 fi
 
-echo "Minimizing GNOME to gnome-core setup while removing LibreOffice and keeping extensions..."
+echo "Minimizing GNOME to gnome-core setup while removing LibreOffice, Transmission, and keeping extensions..."
 
 PACKAGES_TO_REMOVE=(
     gnome-games
@@ -23,6 +23,7 @@ PACKAGES_TO_REMOVE=(
     brasero
     bijiben
     libreoffice*
+    transmission*
 )
 
 for pkg in "${PACKAGES_TO_REMOVE[@]}"; do
@@ -52,5 +53,5 @@ apt clean
 rm -rf /var/cache/apt/archives/*
 rm -rf /tmp/*
 
-echo "GNOME is now minimized to a gnome-core setup with LibreOffice removed and extensions preserved!"
+echo "GNOME is now minimized to a gnome-core setup with LibreOffice, Transmission removed and extensions preserved!"
 echo "Consider restarting your system with: sudo reboot"
