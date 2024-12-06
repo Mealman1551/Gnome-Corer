@@ -5,9 +5,8 @@ if [ "$(id -u)" -ne 0 ]; then
     exit 1
 fi
 
-echo "Minimizing GNOME to gnome-core setup while removing LibreOffice, Transmission, and keeping extensions and icons..."
+echo "Minimizing GNOME to gnome-core setup while removing LibreOffice, Transmission, and keeping extensions and icons intact..."
 
-# Define packages to remove (no icon themes or essential GNOME packages)
 PACKAGES_TO_REMOVE=(
     gnome-games
     gnome-weather
@@ -27,7 +26,6 @@ PACKAGES_TO_REMOVE=(
     transmission*
 )
 
-# Remove packages
 for pkg in "${PACKAGES_TO_REMOVE[@]}"; do
     if dpkg -l | grep -q "^ii\s*${pkg}"; then
         echo "Removing: $pkg"
@@ -37,15 +35,15 @@ for pkg in "${PACKAGES_TO_REMOVE[@]}"; do
     fi
 done
 
-# Clean up unused packages
 echo "Cleaning up unused packages..."
 apt autoremove -y --purge
 
-# Reinstall minimal GNOME (gnome-core) without additional recommendations
 echo "Reinstalling minimal GNOME (gnome-core)..."
 apt install -y --no-install-recommends gnome-core gdm3
 
-# Preserve GNOME Shell extensions
+echo "Installing GNOME Tweaks..."
+apt install -y gnome-tweaks
+
 echo "Preserving GNOME Shell extensions..."
 if dpkg -l | grep -q gnome-shell-extensions; then
     echo "GNOME Shell extensions are already installed."
@@ -54,14 +52,12 @@ else
     apt install -y gnome-shell-extensions
 fi
 
-# Ensure that GNOME essential packages (like icons) are preserved
-echo "Ensuring GNOME icons and essential components are preserved..."
-apt install -y --no-install-recommends gnome-icon-theme gnome-icon-theme-symbolic gnome-shell
+echo "Reinstalling Adwaita icon theme..."
+apt install --reinstall adwaita-icon-theme
 
-# Clean the cache
 apt clean
 rm -rf /var/cache/apt/archives/*
 rm -rf /tmp/*
 
-echo "GNOME is now minimized to a gnome-core setup with LibreOffice, Transmission removed, extensions and icons preserved!"
+echo "GNOME is now minimized to a gnome-core setup with LibreOffice, Transmission removed, extensions and icons preserved, and GNOME Tweaks installed!"
 echo "Consider restarting your system with: sudo reboot"
