@@ -54,9 +54,9 @@ else
     apt install -y gnome-shell-extensions
 fi
 
-# Ensure GNOME icons are installed (in case they were removed)
-echo "Ensuring GNOME icon themes are installed..."
-apt install -y gnome-icon-theme gnome-icon-theme-symbolic
+# Ensure that GNOME essential packages (like icons) are preserved
+echo "Ensuring GNOME icons and essential components are preserved..."
+apt install -y --no-install-recommends gnome-icon-theme gnome-icon-theme-symbolic gnome-shell
 
 # Clean the cache
 apt clean
