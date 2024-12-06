@@ -7,6 +7,7 @@ fi
 
 echo "Minimizing GNOME to gnome-core setup while removing LibreOffice, Transmission, and keeping extensions and icons..."
 
+# Define packages to remove (no icon themes or essential GNOME packages)
 PACKAGES_TO_REMOVE=(
     gnome-games
     gnome-weather
@@ -52,6 +53,10 @@ else
     echo "Installing GNOME Shell extensions..."
     apt install -y gnome-shell-extensions
 fi
+
+# Ensure GNOME icons are installed (in case they were removed)
+echo "Ensuring GNOME icon themes are installed..."
+apt install -y gnome-icon-theme gnome-icon-theme-symbolic
 
 # Clean the cache
 apt clean
