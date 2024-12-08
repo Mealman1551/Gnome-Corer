@@ -10,6 +10,6 @@ Gnome-Corer is writen for Debian.
 
 ## For wich Debian version is this?
 
-Currently this works on Debian 12.08. I will update with every update.
+Currently this works on Debian 12.08. I will update with every Debian update.
 
 ###### © 2024 Mealman1551
