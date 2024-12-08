@@ -23,4 +23,21 @@ Currently, this works on **Debian 12.08**. I will update with every Debian updat
 
 ---
 
+## How to Use
+
+1. Download the script from the latest release:
+   [Download Gnome-Corer](https://github.com/Mealman1551/Gnome-Corer/releases/download/1.0.0/gnome-corer.sh)
+
+2. Make the script executable:
+   ```bash
+   chmod +x gnome-corer.sh
+
+3. Run the script with root privileges:
+   ```bash
+   sudo ./gnome-corer.sh
+
+And you're done! Your GNOME environment will now be debloated to a GNOME-Core level.
+
+---
+
 © 2024 Mealman1551
