@@ -5,7 +5,7 @@ if [ "$(id -u)" -ne 0 ]; then
     exit 1
 fi
 
-echo "Minimizing GNOME to gnome-core setup while removing LibreOffice, Transmission, and keeping extensions and icons intact..."
+echo "Minimizing GNOME to gnome-core setup while removing additional GNOME apps and keeping extensions and icons..."
 
 PACKAGES_TO_REMOVE=(
     gnome-games
@@ -24,6 +24,10 @@ PACKAGES_TO_REMOVE=(
     bijiben
     libreoffice*
     transmission*
+    aisleriot
+    simple-scan
+    gnome-sound-recorder
+    gnome-calculator
 )
 
 for pkg in "${PACKAGES_TO_REMOVE[@]}"; do
@@ -41,9 +45,6 @@ apt autoremove -y --purge
 echo "Reinstalling minimal GNOME (gnome-core)..."
 apt install -y --no-install-recommends gnome-core gdm3
 
-echo "Installing GNOME Tweaks..."
-apt install -y gnome-tweaks
-
 echo "Preserving GNOME Shell extensions..."
 if dpkg -l | grep -q gnome-shell-extensions; then
     echo "GNOME Shell extensions are already installed."
@@ -52,12 +53,9 @@ else
     apt install -y gnome-shell-extensions
 fi
 
-echo "Reinstalling Adwaita icon theme..."
-apt install --reinstall adwaita-icon-theme
-
 apt clean
 rm -rf /var/cache/apt/archives/*
 rm -rf /tmp/*
 
-echo "GNOME is now minimized to a gnome-core setup with LibreOffice, Transmission removed, extensions and icons preserved, and GNOME Tweaks installed!"
+echo "GNOME is now minimized to a gnome-core setup with all unnecessary apps removed, extensions and icons preserved!"
 echo "Consider restarting your system with: sudo reboot"
