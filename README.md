@@ -1,4 +1,4 @@
-# Meal's Gnome-Corer
+# Gnome-Corer
 
 [![Script Type](https://img.shields.io/badge/Script%20Type-Bash-blue)]()
 [![Made for](https://img.shields.io/badge/Made%20for-Debian%2012.08-red)]() <img src='https://www.debian.org/logos/openlogo-nd.svg' width=15>
