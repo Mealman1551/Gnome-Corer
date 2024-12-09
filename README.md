@@ -40,4 +40,10 @@ And you're done! Your GNOME environment will now be debloated to a GNOME-Core le
 
 ---
 
+## How is it tested?
+
+I use Debian {Version} in a Virtual Machine to test the removal of packages.
+
+---
+
 © 2024 Mealman1551
