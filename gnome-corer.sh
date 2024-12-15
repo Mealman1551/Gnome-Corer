@@ -28,6 +28,7 @@ PACKAGES_TO_REMOVE=(
     simple-scan
     gnome-sound-recorder
     gnome-calculator
+    xterm
 )
 
 for pkg in "${PACKAGES_TO_REMOVE[@]}"; do
