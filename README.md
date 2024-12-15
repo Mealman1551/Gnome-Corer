@@ -26,7 +26,7 @@ Currently, this works on **Debian 12.08**. I will update with every Debian updat
 ## How to Use
 
 1. Download the script from the latest release:
-   [Download Gnome-Corer](https://github.com/Mealman1551/Gnome-Corer/releases/download/1.0.0/gnome-corer.sh)
+   [Download Gnome-Corer](https://github.com/Mealman1551/Gnome-Corer/releases/download/1.0.1/gnome-corer.sh)
 
 2. Make the script executable:
    ```bash
