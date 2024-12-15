@@ -1,9 +1,9 @@
 # Gnome-Corer
 
-[![Script Type](https://img.shields.io/badge/Script%20Type-Bash-blue)]()
+[![Script Type](https://img.shields.io/badge/Script%20Type-Shell/Bash-green)]()
 [![Made for](https://img.shields.io/badge/Made%20for-Debian%2012.08-red)]() <img src='https://www.debian.org/logos/openlogo-nd.svg' width=15>
-[![License](https://img.shields.io/badge/License-GNU%20GPL%20v3-green)]()
-[![Status](https://img.shields.io/badge/Status-Stable-brightgreen)]()
+[![License](https://img.shields.io/badge/License-GNU%20GPL%20v3-blue)]()
+[![Status](https://img.shields.io/badge/Development-Active-brightgreen)]()
 
 ## What is it?
 
