@@ -29,6 +29,8 @@ PACKAGES_TO_REMOVE=(
     gnome-sound-recorder
     gnome-calculator
     xterm
+    gnome-camera
+    gnome-tour
 )
 
 for pkg in "${PACKAGES_TO_REMOVE[@]}"; do
@@ -44,7 +46,7 @@ echo "Cleaning up unused packages..."
 apt autoremove -y --purge
 
 echo "Reinstalling minimal GNOME (gnome-core)..."
-apt install -y --no-install-recommends gnome-core gdm3
+apt install -y --no-install-recommends gnome-core
 
 echo "Preserving GNOME Shell extensions..."
 if dpkg -l | grep -q gnome-shell-extensions; then

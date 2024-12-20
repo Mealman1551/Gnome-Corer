@@ -9,6 +9,8 @@
 
 **Gnome-Corer** is a debloating script for Debian's bloated environment that will bring GNOME to a GNOME-Core level.
 
+For now this only works for Debian 12 (Bookworm), Sid and Testing (Trixie) have some problems, but it will be fixed.
+
 ---
 
 ## For which distro is it made?
@@ -49,26 +51,48 @@ I use Debian {Version} in a Virtual Machine to test the removal of packages.
 ## Which packages are removed?
 
 gnome-games
+
 gnome-weather
+
 gnome-calendar
+
 gnome-contacts
+
 gnome-maps
+
 gnome-photos
+
 gnome-music
+
 rhythmbox
+
 totem
+
 shotwell
+
 cheese
+
 evolution
+
 brasero
+
 bijiben
+
 libreoffice*
+
 transmission*
+
 aisleriot
+
 simple-scan
+
 gnome-sound-recorder
+
 gnome-calculator
+
 xterm
+
+ ---
 
 To preserve LibreOffice, please use the script called: "gnome-corer_p.lo.sh"
 
