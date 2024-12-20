@@ -31,6 +31,8 @@ PACKAGES_TO_REMOVE=(
     xterm
     gnome-camera
     gnome-tour
+    gnome-clock
+    
 )
 
 for pkg in "${PACKAGES_TO_REMOVE[@]}"; do

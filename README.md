@@ -9,7 +9,7 @@
 
 **Gnome-Corer** is a debloating script for Debian's bloated environment that will bring GNOME to a GNOME-Core level.
 
-For now this only works for Debian 12 (Bookworm), Sid and Testing (Trixie) have some problems, but it will be fixed.
+For now this only works for Debian 12 (Bookworm), Sid and Testing (Trixie) have some problems, but it will be fixed!
 
 ---
 
