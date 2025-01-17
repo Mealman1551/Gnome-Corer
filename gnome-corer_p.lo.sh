@@ -32,7 +32,7 @@ PACKAGES_TO_REMOVE=(
     gnome-camera
     gnome-tour
     gnome-clock
-    
+    xiterm+thai
 )
 
 for pkg in "${PACKAGES_TO_REMOVE[@]}"; do

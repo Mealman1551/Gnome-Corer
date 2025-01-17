@@ -1,7 +1,7 @@
 # Gnome-Corer
 
 [![Script Type](https://img.shields.io/badge/Script%20language-Shell/Bash-green)]()
-[![Made for](https://img.shields.io/badge/Made%20for-Debian%2012.08-red)]() <img src='https://www.debian.org/logos/openlogo-nd.svg' width=15>
+[![Made for](https://img.shields.io/badge/Made%20for-Debian%2012.09-red)]() <img src='https://www.debian.org/logos/openlogo-nd.svg' width=15>
 [![License](https://img.shields.io/badge/License-GNU%20GPL%20v3-blue)]()
 [![Status](https://img.shields.io/badge/Development-Active-brightgreen)]()
 
@@ -21,14 +21,14 @@ Gnome-Corer is written for **Debian**.
 
 ## For which Debian version is this?
 
-Currently, this works on **Debian 12.08**. I will update with every Debian update.
+Currently, this works on **Debian 12.0**. I will update with every Debian update.
 
 ---
 
 ## How to Use
 
 1. Download the script from the latest release:
-   [Download Gnome-Corer](https://github.com/Mealman1551/Gnome-Corer/releases/download/1.0.1/gnome-corer.sh)
+   [Download Gnome-Corer](https://github.com/Mealman1551/Gnome-Corer/releases/download/1.1.0/gnome-corer.sh)
 
 2. Make the script executable:
    ```bash
@@ -91,6 +91,14 @@ gnome-sound-recorder
 gnome-calculator
 
 xterm
+
+gnome-camera
+
+gnome-tour
+
+gnome-clock
+
+xiterm+thai
 
  ---
 
