@@ -104,4 +104,4 @@ xiterm+thai
 
 To preserve LibreOffice, please use the script called: "gnome-corer_p.lo.sh"
 
-© 2024 Mealman1551
+© 2025 Mealman1551
