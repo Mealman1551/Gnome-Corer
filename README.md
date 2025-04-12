@@ -1,7 +1,7 @@
 # Gnome-Corer
 
 [![Script Type](https://img.shields.io/badge/Script%20language-Shell/Bash-green)]()
-[![Made for](https://img.shields.io/badge/Made%20for-Debian%2012.09-red)]() <img src='https://www.debian.org/logos/openlogo-nd.svg' width=15>
+[![Made for](https://img.shields.io/badge/Made%20for-Debian%2012.10-red)]() <img src='https://www.debian.org/logos/openlogo-nd.svg' width=15>
 [![License](https://img.shields.io/badge/License-GNU%20GPL%20v3-blue)]()
 [![Status](https://img.shields.io/badge/Development-Active-brightgreen)]()
 
@@ -21,7 +21,7 @@ Gnome-Corer is written for **Debian**.
 
 ## For which Debian version is this?
 
-Currently, this works on **Debian 12.09**. I will update with every Debian update.
+Currently, this works on **Debian 12.10**. I will update with every Debian update.
 
 ---
 
