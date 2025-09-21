@@ -1,7 +1,7 @@
 # Gnome-Corer
 
 > [!Warning]
->Debian 13 (Trixie) is not tested for this script, i will test it soon and update if needed.
+> This script is archived and wont work on Debian 13 Trixie! If you select only "Gnome" and deselect "Debian Desktop" you will get a less > debloated desktop environment. This means i will archive this script and i wont update it.
 
 
 [![Script Type](https://img.shields.io/badge/Script%20language-Shell/Bash-green)]()
