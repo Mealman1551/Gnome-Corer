@@ -1,5 +1,9 @@
 # Gnome-Corer
 
+> [!Warning]
+>Debian 13 (Trixie) is not tested for this script, i will test it soon and update if needed.
+
+
 [![Script Type](https://img.shields.io/badge/Script%20language-Shell/Bash-green)]()
 [![Made for](https://img.shields.io/badge/Made%20for-Debian%2012.11-red)]() <img src='https://www.debian.org/logos/openlogo-nd.svg' width=15>
 [![License](https://img.shields.io/badge/License-GNU%20GPL%20v3-blue)]()
