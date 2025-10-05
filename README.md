@@ -1,13 +1,18 @@
 # Gnome-Corer
+> [!Note]
+> Please check out this newer tool for debloating by an awesome user [Aziz Emir](https://github.com/AzizEmir), I'm a contributor for the tool: [Debian-12-Debloat](https://github.com/AzizEmir/Debian-12-Debloat)
+
+
 
 > [!Warning]
-> This script is archived and wont work on Debian 13 Trixie! If you select only "Gnome" and deselect "Debian Desktop" you will get a less > debloated desktop environment. This means i will archive this script and i wont update it.
+> This script is archived and wont work on Debian 13 Trixie! If you select only "Gnome" and deselect "Debian Desktop" in Trixie, you will get a debloated desktop environment. This means i will archive this script and i wont update it.
 
+---
 
-[![Script Type](https://img.shields.io/badge/Script%20language-Shell/Bash-green)]()
-[![Made for](https://img.shields.io/badge/Made%20for-Debian%2012.11-red)]() <img src='https://www.debian.org/logos/openlogo-nd.svg' width=15>
-[![License](https://img.shields.io/badge/License-GNU%20GPL%20v3-blue)]()
-[![Status](https://img.shields.io/badge/Development-Active-brightgreen)]()
+[![Script Type](https://img.shields.io/badge/Script%20language-Shell/Bash-green)](#)
+[![Made for](https://img.shields.io/badge/Made%20for-Debian%2012.11-red)](#) <img src='https://www.debian.org/logos/openlogo-nd.svg' width=15>
+[![License](https://img.shields.io/badge/License-GNU%20GPL%20v3-blue)](#)
+[![Status](https://img.shields.io/badge/Development-Archived-black)](#)
 
 ## What is it?
 
